@@ -48,7 +48,6 @@ dotnet run
 - Thiết kế lấy cảm hứng từ Figma và đã được hiện thực hoá bằng HTML/CSS.
 
 ##📧 Liên hệ
-
 -📮 Email: farolnguyen824@gmail.com
 
 ## © Bản quyền
