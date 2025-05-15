@@ -46,8 +46,10 @@ dotnet run
 📌 Ghi chú
   - Bạn có thể dễ dàng tích hợp thêm backend hoặc CMS nếu muốn mở rộng thành trang thương mại điện tử hoàn chỉnh.
   - Thiết kế lấy cảm hứng từ Figma và đã được hiện thực hoá bằng HTML/CSS.
+
 📧 Liên hệ
 📮 Email: pawverse@gmail.com
+
 © Bản quyền
 © 2025 PawVerse Pet Shop. Thiết kế bởi Tung tung tung.
 Bạn có thể sử dụng cho mục đích cá nhân hoặc học tập. Vui lòng ghi rõ nguồn nếu chia sẻ lại.
