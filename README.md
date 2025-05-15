@@ -53,3 +53,5 @@ dotnet run
 ## © Bản quyền
 © 2025 PawVerse Pet Shop. Thiết kế bởi Tung tung tung.
 - Bạn có thể sử dụng cho mục đích cá nhân hoặc học tập. Vui lòng ghi rõ nguồn nếu chia sẻ lại.
+## Link figma
+https://www.figma.com/design/zQl8mV9RtWNa6bLKv8mN2f/PawVerse?node-id=34-5111&t=bYyiJtuIFjUztInu-0
