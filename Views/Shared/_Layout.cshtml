@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PawVerse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/PawVerse.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    
+
+    
+</head>
+<body>
+    
+    <header class="main-header">
+    <div class="header-inner">
+
+        <!-- Icon menu mobile -->
+        <div class="menu-toggle">
+        <i class="bi bi-list"></i>
+        <span>MENU</span>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+        <img src="/images/headerandfooter/Logobig.png" alt="PawVerse" />
+        </div>
+
+        <!-- Navbar -->
+        <nav class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Service</a>
+        <a href="#">Blog</a>
+        </nav>
+
+        <!-- Search -->
+        <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+        <button><i class="bi bi-search"></i></button>
+        </div>
+
+        <!-- Icons -->
+        <div class="header-icons">
+        <div class="cart">
+            <i class="bi bi-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+        <div class="user">
+            <i class="bi bi-person"></i>
+        </div>
+        </div>
+        
+    </div>
+    </header>
+
+
+
+    
+    <main role="main" class="pb-3">
+        @RenderBody() 
+    </main>   
+
+    <footer class="footer-section">
+    <div class="container footer-grid">
+        
+        <!-- Cột 1: Logo + mô tả -->
+        <div class="footer-logo-col">
+        <img src="~/images/headerandfooter/logo.png" alt="PawVerse Logo" class="footer-logo" />
+        <p class="footer-desc">
+            PawVerse.vn là trang mua sắm trực tuyến các sản phẩm bán lẻ dành cho thú cưng của PawVerse Pet Shop. Công ty TNHH PawVerse.
+        </p>
+        <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+        </div>
+
+        <!-- Cột 2: Company -->
+        <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Minigame</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        </div>
+
+        <!-- Cột 3: Useful Links -->
+        <div class="footer-col">
+        <h5>Useful Links</h5>
+        <ul>
+            <li><a href="#">New products</a></li>
+            <li><a href="#">Best sellers</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">F.A.Q</a></li>
+        </ul>
+        </div>
+
+        <!-- Cột 4: Customer Service -->
+        <div class="footer-col">
+        <h5>Customer Service</h5>
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order tracking</a></li>
+        </ul>
+        </div>
+
+        <!-- Cột 5: Store -->
+        <div class="footer-col">
+        <h5>Store</h5>
+        <p>
+            10/80c Song Hành Xa Lộ Hà Nội, Phường Tân Phú, Thủ Đức, Hồ Chí Minh
+        </p>
+        <p><strong>+84 329222698</strong></p>
+        <p><a href="mailto:pawverse@gmail.com">pawverse@gmail.com</a></p>
+        </div>
+
+    </div>
+
+    <!-- Dòng dưới cùng -->
+    <div class="footer-bottom">
+        <p>© Copyright PawVerse 2025. Design by Figma. Tung tung tung</p>
+        <div class="footer-payments">
+        <img src="~/images/headerandfooter/visa.png" alt="Visa" />
+        </div>
+    </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="~/js/main.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
