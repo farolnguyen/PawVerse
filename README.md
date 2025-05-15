@@ -34,7 +34,7 @@
 1. Clone repository:
 
 ```bash
-git clone https://github.com/your-username/pawverse.git
+git clone https://github.com/farolnguyen/pawverse.git
 cd pawverse
 ```
 2. Mở terminal và nhập:
@@ -43,12 +43,12 @@ dotnet run
 ```
 3. Mở trình duyệt
 
-##📌 Ghi chú
+## 📌 Ghi chú
 - Bạn có thể dễ dàng tích hợp thêm backend hoặc CMS nếu muốn mở rộng thành trang thương mại điện tử hoàn chỉnh.
 - Thiết kế lấy cảm hứng từ Figma và đã được hiện thực hoá bằng HTML/CSS.
 
-##📧 Liên hệ
--📮 Email: farolnguyen824@gmail.com
+## 📧 Liên hệ
+- 📮 Email: farolnguyen824@gmail.com
 
 ## © Bản quyền
 © 2025 PawVerse Pet Shop. Thiết kế bởi Tung tung tung.
