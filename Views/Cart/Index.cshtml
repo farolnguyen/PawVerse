@@ -1,0 +1,156 @@
+@{
+    ViewData["Title"] = "PawVerse – Giỏ hàng";
+}
+<main id="cart-page">
+<!-- HERO SECTION – v3 -->
+    <section class="hero">
+    <div class="hero__inner">
+
+        <!-- LEFT -->
+        <div class="hero__text">
+        <span class="hero__badge">PawVerse</span>
+
+        <h1 class="hero__title">
+            A pet store <br>
+            with <span class="highlight">everything</span><br>
+            you need
+        </h1>
+
+        <p class="hero__desc">
+            Không chỉ yêu thương – PawVerse tôn vinh vẻ đẹp, sức khỏe và
+            hạnh phúc của thú cưng từng ngày.
+        </p>
+
+        <a href="#categories" class="btn-cta">Mua ngay</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero__visual">
+        <img src="~/images/dogeatkem.png" class="hero__dog"  alt="Dog licking ice-cream">
+        <img src="~/images/birdfly.png"   class="hero__bird" alt="">
+        </div>
+
+    </div>
+    </section>
+  <section class="cart-page">
+
+  <h2 class="cart-heading">GIỎ HÀNG <i class="bi bi-heart-fill"></i></h2>
+
+  <div class="cart-container">
+
+    <!-- ========= CỘT TRÁI: Thông tin đặt hàng ========= -->
+    <div class="checkout-form">
+
+      <h3>Thông tin đặt hàng</h3>
+
+      <form>
+
+        <div class="two-col">
+          <div class="form-group">
+            <label>Họ và tên</label>
+            <input type="text" placeholder="Nhập họ tên">
+          </div>
+          <div class="form-group">
+            <label>Số điện thoại</label>
+            <input type="tel" placeholder="Nhập số điện thoại">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="Theo dõi đơn hàng sẽ được gửi qua Email">
+        </div>
+
+        <div class="form-group">
+          <label>Địa chỉ</label>
+          <input type="text" placeholder="Số nhà, đường, phường/xã">
+        </div>
+
+        <div class="three-col">
+          <select><option>Hồ Chí Minh</option></select>
+          <select><option>Quận/ Huyện</option></select>
+          <select><option>Phường/ Xã</option></select>
+        </div>
+
+        <div class="form-group">
+          <label>Ghi chú</label>
+          <input type="text" placeholder="Ví dụ: Giao giờ hành chính">
+        </div>
+
+        <label class="check-other">
+          <input type="checkbox"> Giao cho người khác nhận (nếu có)
+        </label>
+
+      </form>
+
+      <!-- ===== Hình thức thanh toán ===== -->
+      <h3>Hình thức thanh toán</h3>
+
+      <ul class="payment-list">
+        <li><label><input type="radio" name="pay" checked> Thanh toán khi nhận hàng</label></li>
+        <li><label><input type="radio" name="pay"> Ví Momo</label></li>
+        <li><label><input type="radio" name="pay"> ZaloPay / Napas / Visa</label></li>
+        <li><label><input type="radio" name="pay"> VNPay QR</label></li>
+      </ul>
+
+    </div><!-- /.checkout-form -->
+
+
+    <!-- ========= CỘT PHẢI: Giỏ hàng + Tổng kết ========= -->
+    <div class="cart-summary">
+
+      <!-- Danh sách sp -->
+      <h3>Giỏ hàng</h3>
+
+      <div class="cart-item">
+        <img src="/images/products/bowl-single.png" alt="">
+        <div class="item-info">
+          <p class="name">Tô Bobo vuông đơn 31102</p>
+          <span class="sku">Mã SP: 95273129889</span>
+          <div class="variant">Xanh lá</div>
+          <div class="qty-box">
+            <button>-</button><input type="number" value="1" min="1"><button>+</button>
+          </div>
+        </div>
+        <div class="item-price">140.000₫</div>
+        <button class="remove"><i class="bi bi-trash"></i></button>
+      </div>
+
+      <!-- gợi ý / upsell (demo) -->
+      <div class="upsell">
+        <h4>Ưu đãi dành riêng cho bạn</h4>
+        <div class="upsell-card">
+          <img src="/images/products/snack.png" alt="">
+          <div>
+            <p class="upsell-name">Snack Dabo 30g</p>
+            <span class="upsell-price">10.000₫</span>
+            <button class="btn-outline">Lấy ngay</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Voucher -->
+      <div class="voucher-box">
+        <input type="text" placeholder="Nhập mã giảm giá">
+        <button class="btn-outline small">Áp dụng</button>
+      </div>
+
+      <!-- Bảng tính tiền -->
+      <table class="total-table">
+        <tr><td>Tạm tính</td><td>140.000₫</td></tr>
+        <tr><td>Giảm giá</td><td>-0₫</td></tr>
+        <tr><td>Phí giao hàng</td><td>Miễn phí</td></tr>
+        <tr class="grand"><td>Tổng</td><td>140.000₫</td></tr>
+      </table>
+
+      <!-- CTA -->
+      <div class="bottom-bar">
+        <span>COD thanh toán khi nhận hàng</span>
+        <button class="btn-checkout">Đặt hàng</button>
+      </div>
+
+    </div><!-- /.cart-summary -->
+
+  </div><!-- /.cart-container -->
+</section>
+</main>

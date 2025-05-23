@@ -1,0 +1,155 @@
+@{
+    ViewData["Title"] = "PawVerse – Chi tiết sản phẩm";
+}
+
+<main id="product-info-page">
+    <section class="hero">
+    <div class="hero__inner">
+
+        <!-- LEFT -->
+        <div class="hero__text">
+        <span class="hero__badge">PawVerse</span>
+
+        <h1 class="hero__title">
+            A pet store <br>
+            with <span class="highlight">everything</span><br>
+            you need
+        </h1>
+
+        <p class="hero__desc">
+            Không chỉ yêu thương – PawVerse tôn vinh vẻ đẹp, sức khỏe và
+            hạnh phúc của thú cưng từng ngày.
+        </p>
+
+        <a href="#categories" class="btn-cta">Mua ngay</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero__visual">
+        <img src="~/images/dogeatkem.png" class="hero__dog"  alt="Dog licking ice-cream">
+        <img src="~/images/birdfly.png"   class="hero__bird" alt="">
+        </div>
+
+    </div>
+    </section>
+    <!-- PRODUCT DETAIL page -->
+    <section class="product-detail-wrapper">
+
+    <div class="sidebar">
+        <h4>Danh mục sản phẩm</h4>
+        <ul>
+            <li><a href="#">Pate</a></li>
+            <li><a href="#">Thức ăn hạt</a></li>
+            <li><a href="#">Bánh thưởng</a></li>
+            <li><a href="#">Thực phẩm chức năng</a></li>
+            <li><a href="#" class="active">Đồ chơi</a></li>
+            <li><a href="#">Dụng cụ</a></li>
+            <li><a href="#">Phụ kiện</a></li>
+            <li><a href="#">Vệ sinh</a></li>
+        </ul>
+    </div>
+
+    <!-- MAIN -->
+    <main class="product-main">
+
+        <!-- ==== TOP AREA (image + info) ==== -->
+        <div class="product-top">
+
+        <!-- Gallery -->
+        <div class="gallery">
+            <img src="/images/products/whiskas-main.png" class="main-img" alt="Whiskas 1.2kg">
+
+            <div class="thumb-row">
+            <img src="/images/products/whiskas-thumb1.png" alt="" class="thumb active">
+            <img src="/images/products/whiskas-thumb2.png" alt="" class="thumb">
+            <img src="/images/products/whiskas-thumb3.png" alt="" class="thumb">
+            </div>
+        </div>
+
+        <!-- Info -->
+        <div class="info">
+            <h2 class="title">Thức Ăn Hạt Whiskas Vị Cá Biển Túi</h2>
+
+            <ul class="meta">
+            <li><strong>Mã sản phẩm:</strong> 9310022866104</li>
+            <li><strong>Tình trạng:</strong> <span class="in-stock">Còn hàng</span></li>
+            <li><strong>Lượt xem:</strong> 7570</li>
+            <li><strong>Đánh cho mèo lớn</strong></li>
+            <li><strong>Thương hiệu:</strong> WHISKAS</li>
+            </ul>
+
+            <!-- Size / weight options -->
+            <div class="weight-group">
+            <button class="weight active">1.2KG</button>
+            <button class="weight">3KG</button>
+            </div>
+
+            <!-- Price -->
+            <div class="price">
+            Giá bán: <span>140.000 ₫</span>
+            </div>
+
+            <!-- Qty -->
+            <div class="qty-group">
+            <label for="qty">Số lượng</label>
+            <div class="qty-box">
+                <button class="dec">−</button>
+                <input type="number" id="qty" value="1" min="1">
+                <button class="inc">+</button>
+            </div>
+            </div>
+
+            <!-- CTA buttons -->
+            <div class="cta-btns">
+            <button class="add-cart">Thêm vào giỏ hàng</button>
+            <button class="buy-now">Mua ngay</button>
+            </div>
+
+        </div><!-- /.info -->
+        </div><!-- /.product-top -->
+
+        <!-- ==== TABS ==== -->
+        <div class="prod-tabs">
+        <button class="tab active" data-tab="detail">Thông tin chi tiết</button>
+        <button class="tab" data-tab="comment">Bình luận</button>
+        </div>
+
+        <div class="tab-content" id="detail">
+        <h3>Mô tả sản phẩm</h3>
+
+        <h4>Thành phần</h4>
+        <ul>
+            <li>Thịt</li>
+            <li>Cá &amp; dầu</li>
+            <li>Vitamin tổng hợp</li>
+        </ul>
+
+        <h4>Công dụng</h4>
+        <p>Độ ẩm cao giúp mèo trưởng thành có chế độ dinh dưỡng tối ưu và được chuyên gia về mắt hỗ trợ ...</p>
+
+        <h4>Hướng dẫn sử dụng</h4>
+        <ul>
+            <li>Dùng cho mèo lớn</li>
+            <li>Tránh ánh nắng trực tiếp</li>
+        </ul>
+
+        <h4>Hạn sử dụng &amp; thông tin bao bì</h4>
+        <p>Với sự kiểm định ...</p>
+
+        <h4>Thông tin liên hệ</h4>
+        <p>PawVerse<br>
+            Đ/c: 10/80c Song Hành Xa Lộ Hà Nội ...<br>
+            Hotline: 0329222698<br>
+            Email: pawverse@gmail.com
+        </p>
+        </div>
+
+        <div class="tab-content hidden" id="comment">
+        <h3>Bình luận</h3>
+        <p>(Chưa có bình luận...)</p>
+        </div>
+
+    </main>
+    </section>
+
+</main>

@@ -1,0 +1,97 @@
+@{
+    ViewData["Title"] = "PawVerse – Danh mục sản phẩm";
+}
+<main id="product-page">
+<section class="hero">
+    <div class="hero__inner">
+
+        <!-- LEFT -->
+        <div class="hero__text">
+        <span class="hero__badge">PawVerse</span>
+
+        <h1 class="hero__title">
+            A pet store <br>
+            with <span class="highlight">everything</span><br>
+            you need
+        </h1>
+
+        <p class="hero__desc">
+            Không chỉ yêu thương – PawVerse tôn vinh vẻ đẹp, sức khỏe và
+            hạnh phúc của thú cưng từng ngày.
+        </p>
+
+        <a href="#categories" class="btn-cta">Mua ngay</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero__visual">
+        <img src="~/images/dogeatkem.png" class="hero__dog"  alt="Dog licking ice-cream">
+        <img src="~/images/birdfly.png"   class="hero__bird" alt="">
+        </div>
+
+    </div>
+    </section>
+<!-- Section: Dụng Cụ -->
+<section class="tool-category">
+
+  <div class="tool-container">
+
+    <!-- ==== SIDEBAR ==== -->
+    <aside class="tool-sidebar">
+      <h4>Danh mục sản phẩm</h4>
+      <ul>
+        <li><a href="#">Pate</a></li>
+        <li><a href="#">Thức ăn hạt</a></li>
+        <li><a href="#">Bánh thưởng</a></li>
+        <li><a href="#">Thực phẩm chức năng</a></li>
+        <li><a href="#" class="active">Đồ chơi</a></li>
+        <li><a href="#" class="active-cat">Dụng cụ</a></li>
+        <li><a href="#">Phụ kiện</a></li>
+        <li><a href="#">Vệ sinh</a></li>
+      </ul>
+    </aside>
+
+    <!-- ==== MAIN ==== -->
+    <main class="tool-main">
+
+      <!-- Tiêu đề -->
+      <h2 class="tool-title">
+        <span>Dụng Cụ</span>
+        <i class="bi bi-heart-fill"></i>
+      </h2>
+
+      <!-- Thanh filter -->
+      <div class="tool-filter">
+        <button class="btn-filter"><i class="bi bi-sliders"></i> Bộ lọc</button>
+        <select><option>Thương hiệu</option></select>
+        <select><option>Lọc giá</option></select>
+        <select><option>Sắp xếp</option></select>
+      </div>
+
+      <!-- Grid sản phẩm (demo 2 sp) -->
+      <div class="tool-grid">
+        <a asp-controller="Product"
+          asp-action="Info"
+          asp-route-id="1"      
+          class="tool-card-link">
+
+            <div class="tool-card">
+                <img src="/images/products/bowl-strawberry.png" class="tool-img"
+                    alt="Ví dụ" />
+
+                <div class="tool-body">
+                    <h6 class="tool-name">Ví dụ</h6>
+                    <p class="tool-price">50.000₫</p>
+                    <span class="stock in">Còn hàng</span>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+
+    </main>
+
+  </div>
+</section>
+</main>

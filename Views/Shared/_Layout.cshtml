@@ -32,11 +32,35 @@
 
         <!-- Navbar -->
         <nav class="nav-links">
-        <a href="#" class="active">Home</a>
-        <a href="#">Product</a>
-        <a href="#">Service</a>
-        <a href="#">Blog</a>
-        </nav>
+
+        <!-- Home -->
+        <a asp-controller="Home"
+        asp-action="Index"
+        class="@(ViewContext.RouteData.Values["controller"]!.ToString() == "Home" ? "active" : "")">
+            Home
+        </a>
+
+        <!-- Product: trang liệt kê tất cả -->
+        <a asp-controller="Product"
+        asp-action="Index"
+        class="@(ViewContext.RouteData.Values["controller"]!.ToString() == "Product" ? "active" : "")">
+            Product
+        </a>
+
+        <!-- Service -->
+        <a asp-controller="Service"
+        asp-action="Index">
+            Service
+        </a>
+
+        <!-- Blog  -->
+        <a asp-controller="Blog"
+        asp-action="Index">
+            Blog
+        </a>
+
+    </nav>
+
 
         <!-- Search -->
         <div class="search-box">
